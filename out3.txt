@@ -5,3 +5,190 @@ This will clear the console output.
 Run the file once while the tasks are longer. 
 
 Copy and paste the terminal results (when task_duration is 3) here.
+PS C:\Users\bud_1\Desktop\Northwest\44-671\Mod 2\streaming-02-multiple-processes> conda activate base
+PS C:\Users\bud_1\Desktop\Northwest\44-671\Mod 2\streaming-02-multiple-processes> & C:/Users/bud_1/anaconda3/python.exe "c:/Users/bud_1/Desktop/Northwest/44-671/Mod 2/streaming-02-multiple-processes/about.py"
+
+
+==============================================================
+==============================================================
+
+ Welcome! 
+
+ It's 2023-01-24 at 05:48 PM
+
+ This file is running on:    nt Windows 10
+
+ The Python version is:      3.9.12
+
+ The Python interpreter is at:
+ C:\Users\bud_1\anaconda3\python.exe
+
+ The active environment should be either conda OR pip (one should be None):
+
+     Active conda env is: base
+     Active pip env is:   None
+
+ The path to the active virtual environment is:
+
+ C:\Users\bud_1\anaconda3
+
+ The Current Working Directory (CWD) where this command was launched is:
+
+ C:\Users\bud_1\Desktop\Northwest\44-671\Mod 2\streaming-02-multiple-processes
+
+ The absolute path to the data directory is:
+
+ C:\Users\bud_1\Desktop\Northwest\44-671\Mod 2\streaming-02-multiple-processes\
+
+ The absolute path to this source directory is:
+
+
+ The absolute path to this file is:
+
+ c:\Users\bud_1\Desktop\Northwest\44-671\Mod 2\streaming-02-multiple-processes\about.py
+
+==============================================================
+==============================================================
+
+
+PS C:\Users\bud_1\Desktop\Northwest\44-671\Mod 2\streaming-02-multiple-processes> & C:/Users/bud_1/anaconda3/python.exe "c:/Users/bud_1/Desktop/Northwest/44-671/Mod 2/streaming-02-multiple-processes/multiple_processes.py"
+
+
+STARTING UP.............................
+It's 2023-01-24 at 05:51 PM
+
+This file is running on:    nt Windows 10
+The Python version is:      3.9.12
+
+The Python interpreter is at:
+ C:\Users\bud_1\anaconda3\python.exe
+
+
+DELETED tabble pets.
+CREATED table pets.
+
+P3 getting ready to insert Emma the Rabbit.
+P2 getting ready to insert Cooper the Rabbit.
+P3 ADDED Emma the Rabbit.
+P1 getting ready to insert Ace the Dog.
+P3 getting ready to insert Felix the Cat.
+P3 ADDED Felix the Cat.
+P1 ADDED Ace the Dog.
+P1 getting ready to insert Buddy the Dog.
+P1 ADDED Buddy the Dog.
+P2 ADDED Cooper the Rabbit.
+P2 getting ready to insert Dufus the Dog.
+P2 ADDED Dufus the Dog.
+SUCCESS! All processes are done.
+Now - increase the task duration (representing
+      the time the task has the database
+      tied up during an insert statement).
+How well do the multiple, concurrent processes share a database
+when each task can take more time?
+How can we let multiple processes share a resource
+without interfering with each other?
+
+PS C:\Users\bud_1\Desktop\Northwest\44-671\Mod 2\streaming-02-multiple-processes> & C:/Users/bud_1/anaconda3/python.exe "c:/Users/bud_1/Desktop/Northwest/44-671/Mod 2/streaming-02-multiple-processes/multiple_processes.py"
+
+
+STARTING UP.............................
+It's 2023-01-24 at 06:15 PM
+
+This file is running on:    nt Windows 10
+The Python version is:      3.9.12
+
+The Python interpreter is at:
+ C:\Users\bud_1\anaconda3\python.exe
+
+
+DELETED tabble pets.
+CREATED table pets.
+
+P1 getting ready to insert Ace the Dog.
+P1 ADDED Ace the Dog.
+P3 getting ready to insert Emma the Rabbit.
+P2 getting ready to insert Cooper the Rabbit.
+P1 getting ready to insert Buddy the Dog.
+P1 ADDED Buddy the Dog.
+Process Process-3:
+Traceback (most recent call last):
+  File "C:\Users\bud_1\anaconda3\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "C:\Users\bud_1\anaconda3\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\bud_1\Desktop\Northwest\44-671\Mod 2\streaming-02-multiple-processes\multiple_processes.py", line 110, in process_three
+    insert_pet("P3","Emma", "Rabbit")
+  File "c:\Users\bud_1\Desktop\Northwest\44-671\Mod 2\streaming-02-multiple-processes\multiple_processes.py", line 95, in insert_pet
+    cur.execute(sql)
+sqlite3.OperationalError: database is locked
+PS C:\Users\bud_1\Desktop\Northwest\44-671\Mod 2\streaming-02-multiple-processes> & C:/Users/bud_1/anaconda3/python.exe "c:/Users/bud_1/Desktop/Northwest/44-671/Mod 2/streaming-02-multiple-processes/multiple_processes.py"
+
+
+STARTING UP............................. 
+It's 2023-01-24 at 06:17 PM
+
+This file is running on:    nt Windows 10
+The Python version is:      3.9.12       
+
+The Python interpreter is at:
+ C:\Users\bud_1\anaconda3\python.exe     
+
+
+DELETED tabble pets.
+CREATED table pets.
+
+P1 getting ready to insert Ace the Dog.
+P3 getting ready to insert Emma the Rabbit.
+P1 ADDED Ace the Dog.
+P2 getting ready to insert Cooper the Rabbit.
+P1 getting ready to insert Buddy the Dog.
+P1 ADDED Buddy the Dog.
+P2 ADDED Cooper the Rabbit.
+P2 getting ready to insert Dufus the Dog.
+P2 ADDED Dufus the Dog.
+P3 ADDED Emma the Rabbit.
+P3 getting ready to insert Felix the Cat.
+PS C:\Users\bud_1\Desktop\Northwest\44-671\Mod 2\streaming-02-multiple-processes> & C:/Users/bud_1/anaconda3/python.exe "c:/Users/bud_1/Desktop/Northwest/44-671/Mod 2/streaming-02-multiple-processes/multiple_processes.py"
+
+
+STARTING UP............................. 
+It's 2023-01-24 at 06:18 PM
+
+This file is running on:    nt Windows 10
+The Python version is:      3.9.12       
+
+The Python interpreter is at:
+ C:\Users\bud_1\anaconda3\python.exe     
+
+
+DELETED tabble pets.
+CREATED table pets.
+
+P1 getting ready to insert Ace the Dog.
+P1 ADDED Ace the Dog.
+P3 getting ready to insert Emma the Rabbit.
+P2 getting ready to insert Cooper the Rabbit.
+P1 getting ready to insert Buddy the Dog.
+P1 ADDED Buddy the Dog.
+Process Process-2:
+Traceback (most recent call last):
+  File "C:\Users\bud_1\anaconda3\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "C:\Users\bud_1\anaconda3\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\bud_1\Desktop\Northwest\44-671\Mod 2\streaming-02-multiple-processes\multiple_processes.py", line 106, in process_two
+    insert_pet("P2", "Cooper", "Rabbit")
+  File "c:\Users\bud_1\Desktop\Northwest\44-671\Mod 2\streaming-02-multiple-processes\multiple_processes.py", line 95, in insert_pet
+    cur.execute(sql)
+sqlite3.OperationalError: database is locked
+Process Process-3:
+Traceback (most recent call last):
+  File "C:\Users\bud_1\anaconda3\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "C:\Users\bud_1\anaconda3\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\bud_1\Desktop\Northwest\44-671\Mod 2\streaming-02-multiple-processes\multiple_processes.py", line 110, in process_three
+    insert_pet("P3","Emma", "Rabbit")
+  File "c:\Users\bud_1\Desktop\Northwest\44-671\Mod 2\streaming-02-multiple-processes\multiple_processes.py", line 95, in insert_pet
+    cur.execute(sql)
+sqlite3.OperationalError: database is locked
