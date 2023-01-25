@@ -25,13 +25,21 @@ Read the output. Read the code.
 Try to figure out what's going on. 
 
 1. What libraries did we import?
+## sqlite3 time multiprocessing os datetime platform sys
 1. Where do we set the task_duration?
-1. How many functions are defined? 
-1. What are the function names? 
-1. In general, what does each function do? 
+## set to 0
+1. How many functions are defined?
+## 7
+1. What are the function names?
+## create_table drop_table insert_pet process_one process_two process_three recreate_database
+1. In general, what does each function do?
+## One creates a table drops a table and inserts pets names the process put the info in for the tables to be created and dropped then the last recreates the database
 1. Where does the execution begin?
+## the execution starts with dropping tabble pets
 1. How many processes do we start?
+## 3
 1. How many records does each process insert?
+## 6
 
 In this first run, we start 3 processes, 
 each inserting 2 records into a shared database 
