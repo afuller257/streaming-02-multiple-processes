@@ -1,7 +1,9 @@
 # streaming-02-multiple-processes
 
 > Multiple processes accessing a shared resource concurrently
-
+## Andrew Fuller
+## 44671-80
+## Streaming Data
 ## Oveview
 
 This example starts up a shared database and three different processes.
