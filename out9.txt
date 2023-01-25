@@ -1,0 +1,12 @@
+PS C:\Users\bud_1\Desktop\Northwest\44-671\Mod 2\streaming-02-multiple-processes> & C:/Users/bud_1/anaconda3/python.exe "c:/Users/bud_1/Desktop/Northwest/44-671/Mod 2/streaming-02-multiple-processes/process_streaming_AndrewFuller.py"
+Sent: b'[NumberArtist, Streams, Feats, Tracks, Billion, Million]' on port 9999.
+Sent: b'[1Drake, 50,162,292,808, 19,246,513,666, 262, 6, 130]' on port 9999.
+Sent: b'[2Bad Bunny, 44,369,032,140, 5,391,990,975, 163, 5, 118]' on port 9999.
+Sent: b'[3Ed Sheeran, 38,153,682,361, 2,791,278,201, 240, 10, 62]' on port 9999.
+Sent: b'[4The Weeknd, 34,767,779,741, 4,288,903,657, 186, 8, 72]' on port 9999.
+Sent: b'[5Taylor Swift, 32,596,728,109, 424,053,296, 323, 1, 96]' on port 9999.
+Sent: b'[6Justin Bieber, 32,465,998,885, 10,816,202,075, 225, 6, 58]' on port 9999.
+Sent: b'[7Ariana Grande, 32,287,682,040, 2,052,297,828, 181, 8, 71]' on port 9999.
+Sent: b'[8Eminem, 30,431,861,291, 4,165,031,640, 301, 5, 65]' on port 9999.
+Sent: b'[9Post Malone, 29,832,277,109, 2,728,018,288, 98, 9, 57]' on port 9999.
+Sent: b'[10BTS, 28,533,458,128, 323,205,288, 262, 1, 98]' on port 9999.
